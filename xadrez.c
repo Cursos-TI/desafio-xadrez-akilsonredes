@@ -28,5 +28,38 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+char EscolhaPeca;
+int i = 1;
+
+printf ("***OPÇÕES DE PEÇAS DO XADREZ*** \n");
+printf ("Digite (T) para Torre \n");
+printf ("Digite (B) para Bispo \n");
+printf ("Digite (R) para Rainha \n");
+printf("Digite a Opção: ");
+scanf("%c",&EscolhaPeca);
+
+switch(EscolhaPeca){
+    case 'T':
+    while (i <= 5) {
+        printf("Direita \n");
+        i++;
+    }
+    break;
+
+    case 'B':
+    do
+    {
+        printf("Cima, Direita \n");
+        i++;
+    } while (i <= 5);
+    break;
+
+    case 'R':
+    for (i; i <= 8; i++)
+    {
+        printf("Esquerda \n");
+    }
+    break;
+}
     return 0;
 }
