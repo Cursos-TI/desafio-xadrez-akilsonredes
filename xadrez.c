@@ -35,6 +35,8 @@ printf ("***OPÇÕES DE PEÇAS DO XADREZ*** \n");
 printf ("Digite (T) para Torre \n");
 printf ("Digite (B) para Bispo \n");
 printf ("Digite (R) para Rainha \n");
+printf ("Digite (C) para Cavalo \n");
+
 printf("Digite a Opção: ");
 scanf("%c",&EscolhaPeca);
 
@@ -58,6 +60,16 @@ switch(EscolhaPeca){
     for (i; i <= 8; i++)
     {
         printf("Esquerda \n");
+    }
+    break;
+
+    case 'C':
+    while (i <= 1){
+        for (int j = 1; j <= 2; j++){
+            printf("cima \n");
+        }
+        i++;
+        printf("direita \n");
     }
     break;
 }
